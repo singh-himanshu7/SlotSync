@@ -1,11 +1,10 @@
-# 🎓 TimetableAI — Clash-Free College Timetable Generator
+# ZeroClash — AI TimeTable Management System
 
-A full-stack web app that uses a **CSP Backtracking + Simulated Annealing** hybrid
-algorithm to generate clash-free college timetables with zero teacher/room conflicts.
+A full-stack web app that uses a **CSP Backtracking + Simulated Annealing** algorithm to generate clash-free college timetables with zero teacher/room conflicts.
 
 ---
 
-## 🧠 Algorithm
+## Algorithm
 
 | Phase | Type | How it works |
 |---|---|---|
@@ -30,7 +29,7 @@ penalty = 0
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 timetable-app/
@@ -54,7 +53,7 @@ timetable-app/
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Backend (Python / Flask)
 
@@ -84,7 +83,7 @@ npm start
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### `POST /api/generate`
 
@@ -124,7 +123,7 @@ Returns `{ "status": "ok", "algorithm": "csp_sa_hybrid" }`
 
 ---
 
-## 🛠️ Configuration Options
+## Configuration Options
 
 | Field | Description | Default |
 |---|---|---|
@@ -136,7 +135,7 @@ Returns `{ "status": "ok", "algorithm": "csp_sa_hybrid" }`
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -147,7 +146,7 @@ Returns `{ "status": "ok", "algorithm": "csp_sa_hybrid" }`
 
 ---
 
-## 🔧 Extending the App
+## Extending the App
 
 - **Add more subjects/teachers** — CRUD panels support unlimited entries
 - **Multiple sections** — Add a `section` field to subjects and generate per-section

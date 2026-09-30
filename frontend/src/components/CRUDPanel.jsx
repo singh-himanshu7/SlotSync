@@ -90,12 +90,20 @@ function TeacherForm({ initial, subjects, onChange }) {
         <label className="form-label">Can teach</label>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 4 }}>
           {subjects.length === 0 && <span style={{ fontSize: 12, color: "var(--text3)" }}>Add subjects first</span>}
-          {subjects.map(s => (
-            <button key={s.id} className={`day-pill ${form.subjects.includes(s.id) ? "active" : ""}`}
-              onClick={() => toggleSubj(s.id)}>
-              {s.code}
-            </button>
-          ))}
+          {subjects.map(s => {
+            const label = s.code ? `${s.name} (${s.code})` : s.name;
+            const sec = s.section ? ` [${s.section}]` : "";
+            return (
+              <button
+                key={s.id}
+                type="button"
+                className={`day-pill ${form.subjects.includes(s.id) ? "active" : ""}`}
+                onClick={() => toggleSubj(s.id)}
+              >
+                {label}{sec}
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>

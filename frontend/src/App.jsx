@@ -30,7 +30,7 @@ export default function App() {
         <div className="topbar-logo">
           <span>🎓</span> TimetableAI
         </div>
-        <span className="topbar-sub">Clash-free scheduling — CSP + Simulated Annealing</span>
+        <span className="topbar-sub">MCA Multi-Semester Clash-Free Timetable Generator</span>
       </header>
 
       <div className="main-layout">
@@ -50,6 +50,7 @@ export default function App() {
           <div className="sidebar-section" style={{ fontSize: 11, color: "var(--text3)", lineHeight: 1.8 }}>
             <div>🔐 CSP Backtracking</div>
             <div>🌡️ + Simulated Annealing</div>
+            <div>🛡️ 11 Constraint Checker</div>
           </div>
         </nav>
 
@@ -75,7 +76,10 @@ export default function App() {
               subjects={store.subjects} teachers={store.teachers} rooms={store.rooms}
               config={store.config} timetable={store.timetable}
               mlHistory={store.mlHistory} generating={store.generating}
-              lastResult={store.lastResult} generate={store.generate}
+              lastResult={store.lastResult}
+              selectedSemesters={store.selectedSemesters}
+              setSelectedSemesters={store.setSelectedSemesters}
+              generate={store.generate}
             />
           )}
         </main>
