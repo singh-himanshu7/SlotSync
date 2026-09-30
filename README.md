@@ -1,4 +1,4 @@
-# ZeroClash — AI TimeTable Management System
+# SlotSync — AI TimeTable Management System
 
 A full-stack web app that uses a **CSP Backtracking + Simulated Annealing** algorithm to generate clash-free college timetables with zero teacher/room conflicts.
 
